@@ -10,9 +10,9 @@
     <style>
 
     .fundo{
-background: url('img/back.gif');
+background: url('img/venda.gif');
 background-repeat: no-repeat;
- background-size: cover;
+ background-size: 50% 50%;
 }
 .fundo2{
 background: url('img/fundo.png');
