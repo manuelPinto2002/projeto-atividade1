@@ -20,4 +20,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('pag1','App\Http\Controllers\FormController@mostrarForm')->name('mostrar.form');
+Route::get('contactos', function () {
+    return view('contactos');
+});
