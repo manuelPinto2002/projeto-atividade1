@@ -23,3 +23,20 @@ Route::get('/', function () {
 Route::get('contactos', function () {
     return view('contactos');
 });
+Route::get('noticias', function () {
+    return view('noticias');
+});
+Route::get('empresa', function () {
+    return view('empresa');
+});
+Route::get('onde-estamos', function () {
+    return view('onde-estamos');
+});
+Route::get('formulario', function () {
+    return view('formulario');
+});
+
+
+Route::get('formulario','App\Http\Controllers\FormController@mostrarForm')->name('mostrar.form');
+
+Route::post('formulario','App\Http\Controllers\FormController@processarForm')->name('processar.form');

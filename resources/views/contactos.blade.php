@@ -1,15 +1,15 @@
 @extends('layout')
-@section('link')
+@section('inicio')
 
-<html>
 <head>
+    <title>Especialistas</title>
    
     <style>
 
-.fundo{
-background: url('img/contactos.png');
+    .fundo{
+background: url('img/contactos.jpg');
 background-repeat: no-repeat;
- background-size: cover;
+ background-size: 100% 100%;
 }
 .fundo2{
 background: url('img/fundo.png');
@@ -17,21 +17,20 @@ background-repeat: no-repeat;
  background-size: cover;
 }
 
-    
 </style>
 </head>
-
-
-<body>
     
-  @section('nav')
+ @section('nav')
 @endsection
-@section('conteudo')
+@section('final')
+@endsection
+
+
 <main class="role">
 
 
     <!-- jumbtron para principal mensagem de marketing ou call to action -->
-    <div class="jumbotron fundo2">
+    <div class="jumbotron fundo">
         <div class="container">
             <h1 class="display-3 fundo2" >Nossos concactos</h1>
             <p class="fundo2" ></p>
@@ -42,13 +41,13 @@ background-repeat: no-repeat;
         <!-- exemplo de linha de colunas-->
 <div class="row">
     <div class="col-md-4">
-        <h2>telemovel<i class="fas fa-atlas icoweb"></i></h2>
+        <h2>telemovel<i class="fas fas fa-phone-alt"></i></h2>
         <p>915646466</p>
 
         <p><a class="btn btn-secondary" href="criacaosite.html" role="button">Ver detalhes &raquo;</a></p>
     </div>
     <div class="col-md-4" >
-        <h2>telefone <i class="fas fa-digital-tachograph icocard"></i></h2>
+        <h2>telefone <i class="fas fas fa-mobile-alt"></i></h2>
         <p>255155415</p>
         <p><a class="btn btn-secondary" href="marketing.html" role="button">Ver detalhes &raquo;</a></p>
     </div>
@@ -58,11 +57,8 @@ background-repeat: no-repeat;
         <p><a class="btn btn-secondary" href="design.html" role="button">Ver detalhes &raquo;</a></p>
     </div>
 </div>
-<hr>
-    </div> <!--/container-->
-</main> 
-<footer class="container">
-</body>
-</html>
-@endsection
+</div>
+</main>
+
+
 @endsection
